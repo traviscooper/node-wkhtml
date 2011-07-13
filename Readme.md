@@ -66,7 +66,7 @@ See http://madalgo.au.dk/~jakobt/wkhtmltoxdoc/wkhtmltopdf_0.10.0_rc2-doc.html.
 
 Create an image constructor with default global options. See http://madalgo.au.dk/~jakobt/wkhtmltoxdoc/wkhtmltoimage_0.10.0_rc2-doc.html for option documenation.
 
-    // All PDFs created with this constructor will by default be 900px wide
+    // All images created with this constructor will by default be 900px wide
     var Image = require("node-wkhtml").image({ width: 900 });
     
     // Generate image from URL
