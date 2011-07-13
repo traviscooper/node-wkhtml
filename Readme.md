@@ -87,5 +87,5 @@ Like PDFs, images can be output to files, or through stdout.
 
     // stdout
     new Image({url: "www.google.com"}).convert(function(err, stdout) {
-      console.log(stdout); // outputs contents of the PDF.
+      console.log(stdout); // outputs contents of the png.
     });
