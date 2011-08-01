@@ -39,7 +39,7 @@ module.exports = {
     var pdf = new PDF();
     
     pdf.add({ html: "<h1>hello world</h1>" });
-    util.buildCommand(pdf).should.equal("echo <h1>hello world</h1> | wkhtmltopdf - -");
+    util.buildCommand(pdf).should.equal("echo '<h1>hello world</h1>' | wkhtmltopdf - -");
   },
   
   "Should build a url pdf command to file" : function() {
@@ -72,7 +72,7 @@ module.exports = {
   "Should build a stdin image command to stdout" : function() {
     var IMG = require('../').image();
     var img = new IMG({ html: "<h1>hello world</h1>" });
-    util.buildCommand(img).should.equal("echo <h1>hello world</h1> | wkhtmltoimage - -");
+    util.buildCommand(img).should.equal("echo '<h1>hello world</h1>' | wkhtmltoimage - -");
   },
   
   "Should build a url image command to file" : function() {
