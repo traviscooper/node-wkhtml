@@ -42,7 +42,7 @@ To create a PDF object,  invoke the generated constructor.
     var urlPDF = new PDF({ url: "www.google.com" });
 
     // Generate PDF from file
-    var filePDF = new PDF({ file: "foo.html" });
+    var filePDF = new PDF({ filename: "foo.html" });
  
     // Generate PDF from HTML
     var htmlPDF = new PDF({ html: "<h1>Hello World</h1>" });
@@ -73,7 +73,7 @@ Create an image constructor with default global options. See http://madalgo.au.d
     var urlImage = new Image({ url: "www.google.com" });
     
     // Generate image from file
-    var fileImage = new Image({ file: "foo.html" });
+    var fileImage = new Image({ filename: "foo.html" });
     
     // Generate PDF from HTML
     var htmlImage = new Image({ html: "<h1>Hello World</h1>" });

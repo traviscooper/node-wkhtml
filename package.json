@@ -1,5 +1,5 @@
 { "name":"node-wkhtml",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Wrapper for the khtmltopdf and khtmltoimg project.",
   "author": "Mike Hemesath <mike.hemesath@gmail.com>",
   "keywords": ["html", "pdf", "img", "wkhtml", "webkit", "converter", "node"],
