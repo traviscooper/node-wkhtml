@@ -9,9 +9,6 @@ See: https://github.com/antialize/wkhtmltopdf
     // Generate PDF constructor with global options for internal links disabled
     var PDF = require("node-wkhtml").pdf({ disable-internal-link: true });
 
-    // Creates a PDF file of the Express guide.
-    new PDF({url: "http://expressjs.com/guide.html"}).convertAs("expressGuide.pdf");
-
 ## wkhtmltopdf & wkhtmltoimage Installation
 
 Download the appropriate utility from http://code.google.com/p/wkhtmltopdf/downloads/list. Compilation instructions can be found here: http://madalgo.au.dk/~jakobt/wkhtmltoxdoc/wkhtmltopdf_0.10.0_rc2-doc.html
@@ -28,10 +25,11 @@ Create a PDF constructor with default global options. See http://madalgo.au.dk/~
     
     // All PDFs created with this constructor will by default have 10mm margins
     var PDF = require("node-wkhtml").pdf({ 
-      'margin-top': 10, 
-      'margin-bottom': 10, 
-      'margin-left': 10, 
-      'margin-right': 10' 
+      '--margin-top': 10, 
+      '--margin-bottom': 10, 
+      '--margin-left': 10, 
+      '--margin-right': 10,
+      '--orientation': 'Landscape'
     });
     
 To create a PDF object,  invoke the generated constructor.
@@ -47,13 +45,6 @@ To create a PDF object,  invoke the generated constructor.
     // Generate PDF from HTML
     var htmlPDF = new PDF({ html: "<h1>Hello World</h1>" });
 
-PDFs can be output to files, or through stdout.
-
-    // file
-    new PDF({url: "www.google.com"}).convertAs("google.pdf", function(err, stdout) {
-      console.log("PDF Complete!")
-    });
-    
     // stdout
     new PDF({url: "www.google.com"}).convert(function(err, stdout) {
       console.log(stdout); // outputs contents of the PDF.
@@ -78,13 +69,6 @@ Create an image constructor with default global options. See http://madalgo.au.d
     // Generate PDF from HTML
     var htmlImage = new Image({ html: "<h1>Hello World</h1>" });
     
-Like PDFs, images can be output to files, or through stdout.
-
-    // file
-    new Image({url: "www.google.com"}).convertAs("google.png", function(err, stdout) {
-      console.log("Image Complete!");
-    });
-
     // stdout
     new Image({url: "www.google.com"}).convert(function(err, stdout) {
       console.log(stdout); // outputs contents of the png.
