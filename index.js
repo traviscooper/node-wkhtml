@@ -37,7 +37,6 @@ var defaults = module.exports.defaults = function(defaults) {
       }
 
       var args = buildArgs(opts || {}, defaults);
-      console.log(executable, [input].concat(args))
       return spawn(executable, [input || '-'].concat(args), env || defaultEnv);
     }
   }
