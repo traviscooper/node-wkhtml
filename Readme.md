@@ -1,3 +1,10 @@
+# NOTICE:
+
+This project is no longer maintained. If you would like ownership, please let me know and I can transfer the repo to you.
+In the meantime I recommend using [PhantomJS](https://github.com/ariya/phantomjs/wiki/Screen-Capture) to generate
+pdf and png screen captures of websites and HTML.
+
+
 # node-wkhtml
 
 Wrapper for the **wkhtmltopdf** and **wkhtmltoimage** shell utilities. Converts html to pdf or image format using the webkit rendering engine, and qt.
