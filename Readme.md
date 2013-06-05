@@ -1,9 +1,7 @@
 # NOTICE:
 
-This project is no longer maintained. If you would like ownership, please let me know and I can transfer the repo to you.
-In the meantime I recommend using [PhantomJS](https://github.com/ariya/phantomjs/wiki/Screen-Capture) to generate
+This project is no longer maintained. I recommend using [PhantomJS](https://github.com/ariya/phantomjs/wiki/Screen-Capture) to generate
 pdf and png screen captures of websites and HTML.
-
 
 # node-wkhtml
 
