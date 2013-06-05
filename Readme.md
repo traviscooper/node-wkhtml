@@ -44,7 +44,7 @@ Download the appropriate utility from http://code.google.com/p/wkhtmltopdf/downl
 
 **The pdf and image features are in separate utilities**. You will need to download the utility for the feature(s) you plan on using.
 
-## node-khtml Installation
+## node-wkhtml Installation
 
     npm install node-wkhtml
     
