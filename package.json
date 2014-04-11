@@ -4,5 +4,5 @@
   "author": "Mike Hemesath <mike.hemesath@gmail.com>",
   "keywords": ["html", "pdf", "img", "wkhtml", "webkit", "converter", "node"],
   "main": "index",
-  "engines": { "node": ">= 0.6.0" },
+  "engines": { "node": ">= 0.6.0" }
 }
