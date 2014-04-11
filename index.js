@@ -30,7 +30,7 @@ var defaults = module.exports.defaults = function(defaults) {
         executable = 'wkhtmltopdf'
         defaults = pdf;
       } else if (format == "png") {
-        executable = 'wkhtmltoimg'
+        executable = 'wkhtmltoimage'
         defaults = png;
       } else {
         throw "Unsupported format. Use 1 of pdf or png"
